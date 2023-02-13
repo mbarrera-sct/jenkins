@@ -1,5 +1,7 @@
-FROM alpine:3.4
+#This is a sample Image 
+FROM ubuntu 
+MAINTAINER miguelix 
 
-RUN apk update
-RUN apk add vim
-RUN apk add curl
+RUN apt-get update 
+RUN apt-get install nginx -y 
+CMD [“echo”,”Imagen creada”] 
