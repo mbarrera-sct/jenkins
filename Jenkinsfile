@@ -47,7 +47,7 @@ pipeline {
       steps {
         container('kaniko') {
         //git 'https://github.com/mbarrera-sct/jenkins.git'
-        sh '/kaniko/executor -f `pwd`/Dockerfile -c `pwd` --insecure --skip-tls-verify --cache=true --destination=index.docker.io/miguelix/k8s-jenkins'
+        sh '/kaniko/executor -f `pwd`/Dockerfile -c `pwd` --insecure --skip-tls-verify --cache=true --destination=192.168.1.80:6001/'
         }
       }
     }
