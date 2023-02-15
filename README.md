@@ -1,2 +1,2 @@
-# k8s-jenkins-pipeline-git-dockerhub-kaniko-k8s
+# k8s-jenkins-pipeline-git-nexus-kaniko-k8s
 
