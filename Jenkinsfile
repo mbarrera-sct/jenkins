@@ -51,12 +51,5 @@ pipeline {
         }
       }
     }
-
-    stage('Deploy application to Kubernetes using image built during the last stage') {
-        steps {
-            sh 'envsubst < ${WORKSPACE}/deploy.yaml | kubectl apply -f -'
-        }
-
-    }
   }
 }
