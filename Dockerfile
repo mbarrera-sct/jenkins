@@ -1,6 +1,5 @@
-#This is a sample Image 
 FROM ubuntu 
-MAINTAINER miguelix 
+MAINTAINER miguel felix barrera diaz
 
 RUN apt-get update 
 RUN apt-get install nginx -y 
