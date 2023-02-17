@@ -47,7 +47,7 @@ pipeline {
       steps {
         container('kaniko') {
         //git 'https://github.com/mbarrera-sct/jenkins.git'
-        sh '/kaniko/executor -f `pwd`/Dockerfile -c `pwd` --insecure --skip-tls-verify --cache=true --destination=nexus:5000/test-kaniko:1.3'
+        sh '/kaniko/executor -f `pwd`/Dockerfile -c `pwd` --insecure --skip-tls-verify --cache=true --destination=nexus:5000/test-kaniko:1.0'
         }
       }
     }
