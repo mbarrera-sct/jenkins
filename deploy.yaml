@@ -1,1 +1,0 @@
-kubectl create deployment jenkins --image=/${PROJECT_ID}/miguelix/k8s-jenkins:latest
