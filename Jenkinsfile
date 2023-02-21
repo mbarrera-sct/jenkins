@@ -35,7 +35,7 @@ pipeline {
             projected:
               sources:
               - secret:
-                  name: mbarrera-regcred
+                  name: regcred
                   items:
                     - key: .dockerconfigjson
                       path: config.json
